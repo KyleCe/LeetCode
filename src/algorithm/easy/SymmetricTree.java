@@ -7,6 +7,16 @@ import algorithm.base.TreeNode;
  */
 public class SymmetricTree {
     public boolean isSymmetric(TreeNode root) {
-        return false;
+        return isSymmetric(root, root);
+    }
+
+    private boolean isSymmetric(TreeNode leftNode, TreeNode rightNode) {
+        if (leftNode == null && rightNode == null) return true;
+        if (leftNode == null || rightNode == null) return false;
+
+        if (leftNode.val != rightNode.val) return false;
+
+        return isSymmetric(leftNode.left, rightNode.right)
+                && isSymmetric(leftNode.right, rightNode.left);
     }
 }
