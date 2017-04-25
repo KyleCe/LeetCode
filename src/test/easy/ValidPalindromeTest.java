@@ -6,6 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 
@@ -26,9 +27,11 @@ public class ValidPalindromeTest extends BestTime2BuyAndSell {
     @Test
     public void isPalindrome() throws Exception {
         ValidPalindrome vp = new ValidPalindrome();
+        assertTrue(vp.isPalindrome(""));
+        assertTrue(vp.isPalindrome(" "));
         assertTrue(vp.isPalindrome("a."));
-        assertTrue(vp.isPalindrome("a.a"));
         assertTrue(vp.isPalindrome("AB.ba"));
         assertTrue(vp.isPalindrome("a b. B    a"));
+        assertFalse(vp.isPalindrome("a ba dg B    a"));
     }
 }
