@@ -9,10 +9,18 @@ public class ExcelColumnTitle {
         StringBuilder sb = new StringBuilder();
         while (n != 0) {
             n--;
-            char c = (char) (n% 26 + 'A');
-            n  /= 26;
+            char c = (char) (n % 26 + 'A');
+            n /= 26;
             sb.append(c);
         }
         return sb.reverse().toString();
+    }
+
+    public int titleToNumber(String s) {
+        int result = 0;
+        for (int i = 0, len = s.length(); i < len; i++) {
+            result = result * 26 + (s.charAt(i) - 'A' + 1);
+        }
+        return result;
     }
 }
