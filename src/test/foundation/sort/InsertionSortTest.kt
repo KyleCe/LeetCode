@@ -1,0 +1,1 @@
+package test.foundation.sortimport algorithm.foundation.sort.InsertionSortclass InsertionSortTest : SortTestBase() {    override fun sortCore() = InsertionSort()}

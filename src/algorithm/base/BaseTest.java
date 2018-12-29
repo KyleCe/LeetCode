@@ -1,0 +1,1 @@
+package algorithm.base;import com.sun.istack.internal.NotNull;public interface BaseTest {    boolean less(@NotNull Comparable a, Comparable b);    void exch(Comparable[] a, int i, int j);    boolean sorted(Comparable[] a);    void sort(Comparable[] a);}
