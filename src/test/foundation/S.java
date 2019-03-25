@@ -1,0 +1,1 @@
+package test.foundation;public class S {    public static void sop(Object... objects) {        for (Object o : objects) System.out.print(o);        System.out.println();    }}

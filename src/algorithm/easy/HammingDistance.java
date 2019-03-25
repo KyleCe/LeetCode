@@ -1,0 +1,1 @@
+package algorithm.easy;public class HammingDistance {    public int hammingDistance(int x, int y) {        Integer xor = x ^ y;        int count = 0;        for (char c : Integer.toBinaryString(xor).toCharArray()) {            if (c == '1') count++;        }        return count;    }}

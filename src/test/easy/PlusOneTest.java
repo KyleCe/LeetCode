@@ -1,0 +1,1 @@
+package test.easy;import org.junit.Test;import algorithm.easy.PlusOne;public class PlusOneTest {    @Test    public void puls(){        int[] arr = {9,9,9};        new PlusOne().plusOne(arr);    }}

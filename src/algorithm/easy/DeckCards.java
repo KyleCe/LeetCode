@@ -1,0 +1,1 @@
+package algorithm.easy;import java.util.HashMap;public class DeckCards {    public boolean hasGroupsSizeX(int[] deck) {        HashMap<Integer, Integer> map = new HashMap<>();        String s = "";        char[] arr = s.toCharArray();        s  = String.valueOf(arr);        return true;    }}
