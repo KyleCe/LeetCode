@@ -1,0 +1,1 @@
+package test.easy;import org.junit.Assert;import org.junit.Test;import algorithm.easy.MaxSumAfterKNagation;public class MaxSumAfterKNagationTest {    @Test    public void largestSumAfterKNegations() {        int[] A = {4,2,3};        int k =1;        Assert.assertEquals(5, new MaxSumAfterKNagation().largestSumAfterKNegations(A,k));    }}
