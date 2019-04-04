@@ -1,1 +1,1 @@
-import static org.junit.Assert.*;public class DegreeOfAnArrayTest {}
+package test.easy;import org.junit.Assert;import org.junit.Test;import algorithm.easy.DegreeOfAnArray;public class DegreeOfAnArrayTest {    @Test    public void findShortestSubArray() {        int[] nums={1,2,2,3,1};        Assert.assertEquals(2, new DegreeOfAnArray().findShortestSubArray(nums));    }}
