@@ -4,7 +4,6 @@ import org.junit.Assert;
 
 import algorithm.easy.TwoSum;
 
-
 /**
  * Created by KyleCe on 2020/11/22
  */
