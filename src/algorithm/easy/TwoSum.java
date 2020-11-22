@@ -1,19 +1,24 @@
 package algorithm.easy;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by KyleCe on 30/04/2017.
  */
 public class TwoSum {
 
     public int[] twoSum(int[] nums, int target) {
-        int left = 0;
-        int right = nums.length - 1;
-        while (left < right) {
-            int c = nums[left] + nums[right];
-            if (c == target) return new int[]{left + 1, right + 1};
-            else if (c > target) right--;
-            else left++;
+        int len = nums.length;
+        Map<Integer, Integer> map = new HashMap<>(len);
+        for (int i = 0; i < len; i++) {
+            int toFind = target - nums[i];
+            if (map.containsKey(toFind)) {
+                return new int[]{map.get(toFind), i};
+            }
+
+            map.put(nums[i], i);
         }
-        return null;
+        throw new IllegalArgumentException("not found");
     }
 }
