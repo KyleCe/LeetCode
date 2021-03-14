@@ -9,7 +9,9 @@ import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ForEach {
+import algorithm.base.Base;
+
+public class ForEach extends Base {
     enum Face {_1, _2, _3, _4, _5, _6}
 
     @Test
@@ -78,10 +80,6 @@ public class ForEach {
         boolean re = pref_device_id.charAt(pref_device_id.length() - 1) % 2 == 0;
         re = 'b' % 2 == 0;
         log(re);
-    }
-
-    private void log(Object o) {
-        System.out.println(o);
     }
 
     @Test
