@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import algorithm.base.Base;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 /**
  * Created by KyleCe on 2021/3/14
  * <p>
@@ -24,19 +27,19 @@ public class IsSubsequence extends Base {
     public void main() {
         {
             String s = "abc", t = "ahbgdc";
-            assert isSubsequence(s, t);
+            assertTrue(isSubsequence(s, t));
         }
         {
             String s = "axc", t = "ahbgdc";
-            assert !isSubsequence(s, t);
+            assertFalse(isSubsequence(s, t));
         }
         {
             String s = "bdc", t = "ahbgdc";
-            assert isSubsequence(s, t);
+            assertTrue(isSubsequence(s, t));
         }
         {
             String s = "aaaaaa", t = "bbaaaa";
-            assert !isSubsequence(s, t);
+            assertFalse(isSubsequence(s, t));
         }
     }
 
