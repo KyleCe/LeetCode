@@ -53,7 +53,7 @@ public class IsSubsequence extends Base {
             match = false;
             for (; j < lenT; j++) {
                 //log("for j      j=", j);
-                if (target.charAt(j) == source.charAt(i)) {
+                if (cArrTarget[j] == cArrSource[i]) {
                     match = true;
                     j++;
                     break;
